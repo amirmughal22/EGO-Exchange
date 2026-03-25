@@ -1,0 +1,12 @@
+{
+  "name": "ego-exchange-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.5.0",
+  "scripts": {
+    "docs:dev": "pnpm --filter ego-docs dev",
+    "docs:build": "pnpm --filter ego-docs build",
+    "web:dev": "pnpm --filter ego-web dev",
+    "web:build": "pnpm --filter ego-web build",
+    "lint": "echo 'configure eslint as needed'"
+  }
+}
