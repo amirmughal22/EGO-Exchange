@@ -1,0 +1,18 @@
+# System Overview
+
+Ego uses a hybrid execution architecture:
+
+1. **Interface layer** — web, mobile, bot, and SDK clients
+2. **Gateway layer** — auth, signatures, routing, order management, market data
+3. **Trading layer** — orderbook sequencer, AMM router, perps engine, risk engine
+4. **Settlement layer** — onchain positions, balances, rewards, staking, governance
+5. **Cross-chain layer** — bridge adapters, message relayers, proof verification
+6. **AI layer** — agent runtime, copilot, signal ranking, launch screening
+
+## Key design goals
+
+- CEX-grade speed with DEX-grade custody
+- Isolated and portfolio margin
+- Permissionless market creation with guarded risk controls
+- Cross-chain collateral and execution abstraction
+- AI-native trading with bounded permissions and budgeted execution

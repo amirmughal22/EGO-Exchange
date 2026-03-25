@@ -1,0 +1,13 @@
+# Protocol Overview
+
+The protocol is split into specialized modules:
+
+- `VaultManager` for deposits, balances, and subaccounts
+- `PoolFactory` for spot AMMs and concentrated liquidity pools
+- `PerpsEngine` for perpetual markets, funding, and open interest limits
+- `RiskEngine` for margin checks, haircut rules, and maintenance requirements
+- `LiquidationEngine` for partial and full liquidation workflows
+- `InsuranceFund` for bad debt absorption
+- `RewardsController` for emissions, maker incentives, and trader campaigns
+- `StakingController` for EGO staking and fee share
+- `Governance` for parameter changes and treasury actions

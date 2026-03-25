@@ -1,0 +1,29 @@
+# Margin System
+
+## Account model
+
+- Main account
+- Subaccounts
+- Isolated per-market margin buckets
+- Portfolio margin bucket for approved collateral sets
+
+## Collateral policy
+
+- Stablecoins: 100% collateral factor baseline
+- Majors: haircut based on volatility bucket
+- Long-tail assets: limited or isolated-only support
+- LP positions: conservative discounted value
+
+## Formulas
+
+- equity = collateral_value + unrealized_pnl - borrow_fees - funding_payable
+- initial_margin_ratio = required_initial_margin / notional
+- maintenance_margin_ratio = required_maintenance_margin / notional
+
+## Cross-margin
+
+Cross-margin shares collateral across approved markets.
+
+## Portfolio margin
+
+Portfolio margin uses scenario-based stress tests and correlation matrices, not simple leverage caps.

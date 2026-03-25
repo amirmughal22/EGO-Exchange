@@ -1,0 +1,21 @@
+# Liquidation System
+
+## Trigger conditions
+
+Liquidation begins when maintenance margin falls below required thresholds.
+
+## Flow
+
+1. Risk engine flags account
+2. Liquidator receives quote to take position or collateral
+3. Partial liquidation reduces risk first
+4. Full liquidation executes when recovery is impossible
+5. Insurance fund covers residual bad debt
+
+## Protections
+
+- Partial liquidation before full wipe
+- Max slippage bounds on liquidation fills
+- Oracle delay protection
+- Cooldown for disputed oracle states
+- Socialized loss only as last resort

@@ -1,0 +1,46 @@
+# Perps Engine
+
+## Components
+
+- Market registry
+- Matching gateway
+- Position ledger
+- Funding engine
+- Margin engine
+- Liquidation queue
+- Insurance fund
+
+## Market model
+
+Each perpetual market defines:
+
+- base asset
+- quote asset
+- index oracle
+- mark price formula
+- initial margin requirement
+- maintenance margin requirement
+- max leverage
+- max open interest
+- funding interval
+
+## Funding
+
+Funding is computed from mark-index premium over discrete intervals.
+
+## Order types
+
+- limit
+- market
+- stop market
+- stop limit
+- take profit
+- reduce only
+- post only
+- iceberg
+
+## Matching modes
+
+- central sequencer for canonical ordering
+- cryptographic order receipts
+- fallback batch auction during degraded operation

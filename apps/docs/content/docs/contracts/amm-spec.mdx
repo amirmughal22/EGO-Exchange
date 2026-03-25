@@ -1,0 +1,24 @@
+# AMM Spec
+
+## Pool types
+
+- Constant product pools for long-tail assets
+- Concentrated liquidity pools for major pairs
+- Stable-swap pools for correlated assets
+- Launch pools for new listings and meme products
+
+## Core functions
+
+- createPool(base, quote, feeTier)
+- addLiquidity(positionParams)
+- removeLiquidity(tokenId, liquidity)
+- swapExactIn(route, amountIn, minAmountOut)
+- swapExactOut(route, amountOut, maxAmountIn)
+- collectFees(tokenId)
+
+## Risk controls
+
+- Dynamic fees based on volatility and oracle divergence
+- Circuit breaker on extreme price impact
+- Pausable listing guard for malicious tokens
+- Oracle sanity checks for launch pools
